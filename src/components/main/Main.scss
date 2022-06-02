@@ -1,0 +1,39 @@
+.main {
+  width: 100vw;
+  min-height: calc(100vh - 16vh);
+  text-align: center;
+
+  .header {
+    width: 50vw;
+    height: 8vh;
+    margin: 2rem 25rem;
+
+    span {
+      font-size: 2.5rem;
+      font-weight: 700;
+    }
+  }
+
+  .products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .loading {
+    margin-top: 5rem;
+    font-size: 10rem;
+    transition: all 2s ease-out;
+  }
+
+  .footer {
+    width: 100vw;
+    height: 20vh;
+    color: white;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}

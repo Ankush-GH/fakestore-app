@@ -1,0 +1,25 @@
+.navbar {
+  width: 100vw;
+  height: 10vh;
+  background-color: black;
+  background-image: linear-gradient(#fffc00, #ffffff);
+
+  .categories {
+    .navlink {
+      margin: 1rem 8rem;
+      text-decoration: none;
+      color: rgb(35, 31, 32);
+      font-size: 1.3rem;
+      font-weight: 700;
+      transition: all 0.3s ease;
+    }
+
+    .navlink:hover {
+      color: crimson;
+    }
+  }
+
+  .active {
+    border: 2px solid black;
+  }
+}

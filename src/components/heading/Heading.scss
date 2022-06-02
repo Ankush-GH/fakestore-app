@@ -1,0 +1,27 @@
+.heading {
+  width: 100vw;
+  height: 10vh;
+  background-color: pink;
+  display: flex;
+  justify-content: space-between;
+  background-image: linear-gradient(to right, #fffc00, #ffffff);
+
+  .logo {
+    width: 15vw;
+    height: 10vh;
+    padding-left: 1rem;
+    transform: rotate(-5deg);
+
+    .link {
+      color: black;
+      text-decoration: none;
+      font-size: 2.5rem;
+      font-weight: 700;
+      transition: all 0.3s ease;
+    }
+
+    .link:hover {
+      color: crimson;
+    }
+  }
+}
