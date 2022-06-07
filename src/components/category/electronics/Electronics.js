@@ -49,7 +49,7 @@ const Electronics = () => {
         </div>
       )}
       <div className="footer">
-        <NavLink to="/fakeStore" className="btn">
+        <NavLink to="/" className="btn">
           <AiFillHome />
         </NavLink>
       </div>

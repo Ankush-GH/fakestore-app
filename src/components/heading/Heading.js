@@ -7,7 +7,7 @@ const Heading = () => {
   return (
     <div className="heading">
       <div className="logo">
-        <Link to="/fakeStore" className="link">
+        <Link to="/" className="link">
           Fake Store
         </Link>
       </div>

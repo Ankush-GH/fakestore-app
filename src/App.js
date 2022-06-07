@@ -17,7 +17,7 @@ function App() {
       <Heading />
       <Navbar />
       <Switch>
-        <Route exact path="/fakeStore">
+        <Route exact path="/">
           {<Main />}
         </Route>
         <Route exact path="/mens">
