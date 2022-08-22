@@ -1,23 +1,24 @@
+import axios from "axios";
 import React, { useState, useEffect } from "react";
-
+import FadeLoader from "react-spinners/FadeLoader";
 import "./Main.scss";
 import ProductItem from "./productitem/ProductItem";
 
-const apiForAll = "https://fakestoreapi.com/products";
+export const apiForAll = "https://fakestoreapi.com/products";
 
 const Main = () => {
   // TO MANAGE THE PRODUCTS
   const [products, setProducts] = useState([]);
-  const [Loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   const getProducts = () => {
     setLoading(true);
-    fetch(apiForAll)
-      .then((res) => res.json())
-      .then((resData) => {
-        setProducts(resData);
+
+    axios.get(apiForAll)
+      .then(resData => {
+        setProducts(resData.data);
         setLoading(false);
-      });
+      })
   };
 
   useEffect(() => {
@@ -28,8 +29,8 @@ const Main = () => {
 
   return (
     <>
-      {Loading ? (
-        <h1 className="loading">Loading...</h1>
+      {loading ? (
+        <FadeLoader style={{ position: "fixed", top: "50%", left: "50%", transform: "translate(-50%, -50%)" }} color={"black"} loading={loading} size={150} />
       ) : (
         <div className="main">
           <div className="header">

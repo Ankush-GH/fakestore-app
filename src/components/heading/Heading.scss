@@ -1,16 +1,18 @@
 .heading {
   width: 100vw;
   height: 10vh;
-  background-color: pink;
   display: flex;
   justify-content: space-between;
-  background-image: linear-gradient(to right, #fffc00, #ffffff);
 
   .logo {
+    border-top-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    background-color: RGB(56, 89, 255);
     width: 15vw;
     height: 10vh;
     padding-left: 1rem;
-    transform: rotate(-5deg);
+    margin-left: 1rem;
+    margin-top: 0.4rem;
 
     .link {
       color: black;
@@ -21,7 +23,7 @@
     }
 
     .link:hover {
-      color: crimson;
+      text-decoration: underline;
     }
   }
 }

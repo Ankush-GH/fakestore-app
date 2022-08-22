@@ -1,81 +1,31 @@
-.productitem {
-  width: 23rem;
-  margin: 2rem;
+.card {
+  padding: 1rem;
+  margin: 4rem;
+  height: 35rem;
+  width: 20rem;
   position: relative;
-  overflow: hidden;
 
   img {
-    max-width: 100%;
-    max-height: 70%;
-    object-fit: contain;
+    width: 18rem;
+    height: 60%;
   }
 
-  img:hover {
-    text-decoration: underline;
-  }
-
-  .productinfo {
+  .card-body {
     display: flex;
     flex-direction: column;
-    padding: 1rem;
-    align-items: center;
-    justify-content: flex-start;
 
-    .link {
-      font-size: 1.8rem;
-      text-decoration: none;
-      cursor: pointer;
-      margin: 1rem;
-      color: black;
-      animation: myAnim 15s ease 0s 1 normal forwards;
-    }
-
-    .link:hover {
-      text-decoration: underline;
-      color: crimson;
-      transition: all 0.3s ease-in-out;
-
-      @keyframes myAnim {
-        0%,
-        100% {
-          transform: rotate(0deg);
-          transform-origin: 50% 100%;
-        }
-
-        10% {
-          transform: rotate(2deg);
-        }
-
-        20%,
-        40%,
-        60% {
-          transform: rotate(-4deg);
-        }
-
-        30%,
-        50%,
-        70% {
-          transform: rotate(4deg);
-        }
-
-        80% {
-          transform: rotate(-2deg);
-        }
-
-        90% {
-          transform: rotate(2deg);
-        }
-      }
-    }
-
-    span {
-      margin: 1rem;
-      font-size: 1.5rem;
-      font-weight: 400;
+    .title {
+      width: 16rem;
     }
 
     .rating {
-      font-weight: 200;
+      font-weight: 400;
+    }
+
+    .link {
+      position: absolute;
+      right: 7rem;
+      bottom: 0.5rem;
     }
   }
 }

@@ -2,21 +2,24 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { AiFillHome } from "react-icons/ai";
 import { NavLink } from "react-router-dom";
-
+import axios from "axios"
 import "./Womens.scss";
+import { apiForAll } from "../../main/Main";
+import FadeLoader from "react-spinners/FadeLoader";
 
 const Womens = () => {
   const [womens, setWomens] = useState([]);
-  const [Loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   const getWomens = () => {
     setLoading(true);
-    fetch("https://fakestoreapi.com/products/category/women's clothing")
-      .then((res) => res.json())
-      .then((resData) => {
-        setWomens(resData);
+
+    axios.get(apiForAll + "/category/women's clothing")
+      .then(resData => {
+        console.log(resData.data);
+        setWomens(resData.data);
         setLoading(false);
-      });
+      })
   };
 
   useEffect(() => {
@@ -25,24 +28,24 @@ const Womens = () => {
 
   return (
     <>
-      {Loading ? (
-        <h1 className="loading">Loading...</h1>
+      {loading ? (
+        <FadeLoader style={{ position: "fixed", top: "50%", left: "50%", transform: "translate(-50%, -50%)" }} color={"black"} loading={loading} size={150} />
       ) : (
         <div className="womens">
           {womens.map((product) => (
-            <div className="productitem">
-              <img
-                src={product.image}
-                className="card-img-top"
-                alt={product.title}
-              />
+            <div className="card shadow">
+              <img src={product.image} className="card-img-top" alt="..." />
+              <div className="card-body">
+                <h5 className="title card-title">{product.title}</h5>
 
-              <div className="productinfo">
-                <Link className="link" to={`/productdetail/${product.id}`}>
-                  {product.title}
+                <h5 className="price">&#36; - {product.price}
+                </h5>
+
+                <h6 className="rating">⭐{product.rating.rate}</h6>
+
+                <Link className="link btn btn-primary" to={`/productdetail/${product.id}`}>
+                  Check Out
                 </Link>
-                <span>${product.price}</span>
-                <span className="rating">⭐{product.rating.rate}</span>
               </div>
             </div>
           ))}

@@ -5,15 +5,19 @@ import "./ProductItem.scss";
 
 const ProductItem = ({ product }) => {
   return (
-    <div className="productitem">
-      <img src={product.image} className="card-img-top" alt={product.title} />
+    <div className="card shadow">
+      <img src={product.image} className="card-img-top" alt="..." />
+      <div className="card-body">
+        <h5 className="title card-title">{product.title}</h5>
 
-      <div className="productinfo">
-        <Link className="link" to={`/productdetail/${product.id}`}>
-          {product.title}
+        <h5 className="price">&#36; - {product.price}
+        </h5>
+
+        <h6 className="rating">⭐{product.rating.rate}</h6>
+
+        <Link className="link btn btn-primary" to={`/productdetail/${product.id}`}>
+          Check Out
         </Link>
-        <span>${product.price}</span>
-        <span className="rating">⭐{product.rating.rate}</span>
       </div>
     </div>
   );

@@ -2,8 +2,9 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { AiFillHome } from "react-icons/ai";
 import { NavLink } from "react-router-dom";
-
+import FadeLoader from "react-spinners/FadeLoader"; 
 import "./ProductDetails.scss";
+import axios from "axios"
 
 const ProductDetails = () => {
   const { id } = useParams();
@@ -14,12 +15,12 @@ const ProductDetails = () => {
   useEffect(() => {
     const getProductDetails = () => {
       setLoading(true);
-      fetch(`https://fakestoreapi.com/products/${id}`)
-        .then((res) => res.json())
-        .then((resData) => {
-          setProductDetail(resData);
+
+      axios.get(`https://fakestoreapi.com/products/${id}`)
+        .then(resData => {
+          setProductDetail(resData.data);
           setLoading(false);
-        });
+        })
     };
 
     getProductDetails();
@@ -31,7 +32,7 @@ const ProductDetails = () => {
     <>
       <div className="productdetails">
         {loading ? (
-          <h1 className="loading">Loading...</h1>
+          <FadeLoader style={{ position: "fixed", top: "50%", left: "50%", transform: "translate(-50%, -50%)" }} color={"black"} loading={loading} size={150} />
         ) : (
           <>
             <img src={ProductDetail.image} alt="image" />
