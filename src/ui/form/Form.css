@@ -1,0 +1,181 @@
+.app__form {
+  width: 30vw;
+  height: 20vh;
+  background-color: var(--color-grey);
+  flex-direction: column;
+}
+
+.email-input {
+  outline: none;
+  font-size: 1rem;
+  text-align: center;
+  width: 80%;
+  height: 40%;
+}
+.email-button {
+  border-radius: 2rem;
+  background-color: var(--color-words);
+  border: none;
+  font-weight: 500;
+  margin-top: 3%;
+  width: 80%;
+  height: 40%;
+  transition: 0.8s ease;
+}
+.email-button:hover {
+  border-radius: 0.5rem;
+}
+
+/* for small to medium mobiles */
+@media screen and (max-width: 361px) and (min-width: 320px) {
+  .email-input {
+    width: 60vw;
+    height: 5vh;
+    font-size: small;
+  }
+  .email-button {
+    width: 60vw;
+    height: 5vh;
+    font-size: small;
+  }
+}
+
+@media screen and (max-width: 400px) and (min-width: 362px) {
+  .app__form {
+    width: 80vw;
+  }
+  .email-input {
+    width: 60vw;
+    height: 5vh;
+    font-size: small;
+  }
+  .email-button {
+    width: 60vw;
+    height: 5vh;
+    font-size: small;
+  }
+}
+
+@media screen and (max-width: 440px) and (min-width: 401px) {
+  .app__form {
+    width: 80vw;
+  }
+  .email-input {
+    width: 60vw;
+    height: 5vh;
+    font-size: small;
+  }
+  .email-button {
+    width: 60vw;
+    height: 5vh;
+    font-size: small;
+  }
+}
+
+/* for medium to tablets */
+@media screen and (max-width: 730px) and (min-width: 641px) {
+  .app__form {
+    width: 80vw;
+  }
+  .email-input {
+    width: 60vw;
+    height: 5vh;
+    font-size: medium;
+  }
+  .email-button {
+    width: 60vw;
+    height: 5vh;
+    font-size: medium;
+  }
+}
+
+@media screen and (max-width: 821px) and (min-width: 731px) {
+  .app__form {
+    width: 80vw;
+  }
+  .email-input {
+    width: 60vw;
+    height: 5vh;
+    font-size: medium;
+  }
+  .email-button {
+    width: 60vw;
+    height: 5vh;
+    font-size: medium;
+  }
+}
+
+/* for tablets to Laptop screens */
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+  .app__form {
+    width: 40vw;
+  }
+  .email-input {
+    width: 35vw;
+    height: 5vh;
+    font-size: large;
+  }
+  .email-button {
+    width: 35vw;
+    height: 5vh;
+    font-size: large;
+  }
+}
+
+/* for laptop to desktop or bigger screens */
+@media screen and (max-width: 1280px) and (min-width: 1025px) {
+  .app__form {
+    width: 40vw;
+  }
+  .email-input {
+    width: 35vw;
+    height: 5vh;
+    font-size: large;
+  }
+  .email-button {
+    width: 35vw;
+    height: 5vh;
+    font-size: large;
+  }
+}
+
+/* for small to medium mobiles */
+/* @media screen and (max-width: 480px) and (min-width: 320px) {
+  .email-input {
+    font-size: x-small;
+    width: 10rem;
+    height: 2rem;
+  }
+  .email-button {
+    width: 10rem;
+    height: 2rem;
+  }
+  .app__form {
+    width: 18rem;
+  }
+} */
+
+/* for medium to tablets */
+/* @media screen and (max-width: 768px) and (min-width: 481px) {
+  .email-input {
+    font-size: small;
+    width: 15rem;
+    height: 3.5rem;
+  }
+  .email-button {
+    width: 15rem;
+    height: 3.5rem;
+    font-size: x-large;
+  }
+  .app__form {
+    width: 18rem;
+  }
+} */
+
+/* for tablets to Laptop screens */
+/* @media screen and (max-width: 1024px) and (min-width: 769px) {
+} */
+
+/* for laptop to desktop or bigger screens */
+/* @media screen and (max-width: 1280px) and (min-width: 1025px) {
+} */

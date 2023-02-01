@@ -1,0 +1,56 @@
+.app__typewriter {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-grey);
+  height: 10vh;
+}
+
+/* for small to medium mobiles */
+@media screen and (max-width: 361px) and (min-width: 320px) {
+  .app__typewriter {
+    width: 100vw;
+    height: 10vh;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 400px) and (min-width: 362px) {
+  .app__typewriter {
+    width: 100vw;
+    height: 10vh;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 440px) and (min-width: 401px) {
+  .app__typewriter {
+    width: 100vw;
+    height: 10vh;
+    font-size: 1rem;
+  }
+}
+
+/* for medium to tablets */
+@media screen and (max-width: 730px) and (min-width: 641px) {
+  .app__typewriter {
+    width: 100vw;
+    height: 10vh;
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 821px) and (min-width: 731px) {
+  .app__typewriter {
+    width: 100vw;
+    height: 10vh;
+    font-size: 2rem;
+  }
+}
+
+/* for tablets to Laptop screens */
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+}
+
+/* for laptop to desktop or bigger screens */
+@media screen and (max-width: 1280px) and (min-width: 1025px) {
+}

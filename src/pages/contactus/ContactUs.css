@@ -1,0 +1,18 @@
+.app__contactus {
+  height: 30vh;
+  flex-direction: column;
+}
+
+/* for tablets to Laptop screens */
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+    .Number{
+        font-size: 2rem;
+    }
+}
+
+/* for laptop to desktop or bigger screens */
+@media screen and (max-width: 1280px) and (min-width: 1025px) {
+    .Number{
+        font-size: 2rem;
+    }
+}

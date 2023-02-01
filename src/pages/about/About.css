@@ -1,0 +1,217 @@
+.app__about {
+  flex-direction: column;
+  margin: 3rem 0;
+}
+
+.images {
+  flex-wrap: wrap;
+}
+
+.about-images {
+  width: 40vw;
+  height: 60vh;
+}
+
+.grey-bg {
+  padding: 2rem;
+  border-radius: 15px;
+  text-align: center;
+  line-height: 6rem;
+  color: var(--color-words);
+  background: var(--color-grey);
+}
+
+/* for small to medium mobiles */
+@media screen and (max-width: 361px) and (min-width: 320px) {
+  .about-mainheader {
+    margin: -1rem 0 1rem 0;
+    font-size: medium;
+  }
+  .about-images {
+    height: 30vh;
+  }
+  .about-sec_header {
+    font-size: medium;
+    margin: 2rem 0 0.5rem 0;
+  }
+  .grey-bg {
+    font-size: larger;
+    line-height: 3rem;
+  }
+}
+
+@media screen and (max-width: 400px) and (min-width: 362px) {
+  .about-mainheader {
+    margin: -1rem 0 1rem 0;
+    font-size: medium;
+  }
+  .about-images {
+    height: 30vh;
+  }
+  .about-sec_header {
+    font-size: medium;
+    margin: 2rem 0 0.5rem 0;
+  }
+  .grey-bg {
+    font-size: larger;
+    line-height: 3rem;
+  }
+}
+
+@media screen and (max-width: 440px) and (min-width: 401px) {
+  .about-mainheader {
+    margin: -1rem 0 1rem 0;
+    font-size: medium;
+  }
+  .about-images {
+    height: 30vh;
+  }
+  .about-sec_header {
+    font-size: medium;
+    margin: 2rem 0 0.5rem 0;
+  }
+  .grey-bg {
+    font-size: larger;
+    line-height: 3rem;
+  }
+}
+
+/* for medium to tablets */
+@media screen and (max-width: 730px) and (min-width: 641px) {
+  .about-mainheader {
+    margin: -1rem 0 1rem 0;
+    font-size: x-large;
+  }
+  .about-images {
+    height: 30vh;
+  }
+  .about-sec_header {
+    font-size: x-large;
+    margin: 2rem 0 0.5rem 0;
+  }
+  .grey-bg {
+    font-size: x-large;
+    line-height: 3rem;
+  }
+}
+
+@media screen and (max-width: 821px) and (min-width: 731px) {
+  .about-mainheader {
+    margin: -1rem 0 1rem 0;
+    font-size: x-large;
+  }
+  .about-images {
+    height: 30vh;
+  }
+  .about-sec_header {
+    font-size: x-large;
+    margin: 2rem 0 0.5rem 0;
+  }
+  .grey-bg {
+    font-size: x-large;
+    line-height: 3rem;
+  }
+}
+
+/* for tablets to Laptop screens */
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+  .about-mainheader {
+    margin: -1rem 0 1rem 0;
+    font-size: xx-large;
+  }
+  .about-images {
+    height: 30vh;
+  }
+  .about-sec_header {
+    font-size: xx-large;
+    margin: 2rem 0 0.5rem 0;
+  }
+  .grey-bg {
+    font-size: xx-large;
+    line-height: 4rem;
+  }
+}
+
+/* for laptop to desktop or bigger screens */
+@media screen and (max-width: 1280px) and (min-width: 1025px) {
+  .about-mainheader {
+    margin: -1rem 0 1rem 0;
+    font-size: xx-large;
+  }
+  .about-images {
+    height: 30vh;
+  }
+  .about-sec_header {
+    font-size: xx-large;
+    margin: 2rem 0 0.5rem 0;
+  }
+  .grey-bg {
+    font-size: xx-large;
+    line-height: 5rem;
+  }
+}
+
+/* for small to medium mobiles */
+/* @media screen and (max-width: 480px) and (min-width: 320px) {
+  .app__about {
+    margin: 3rem 0;
+  }
+  .about-mainheader {
+    font-size: 1rem;
+  }
+  .about-images {
+    width: 46vw;
+    height: auto;
+  }
+  .about-sec_header {
+    font-size: 1rem;
+  }
+  .grey-bg {
+    line-height: 3rem;
+    width: 90vw;
+    height: 50vh;
+    font-size: 1rem;
+  }
+} */
+
+/* for medium to tablets */
+/* @media screen and (max-width: 768px) and (min-width: 481px) {
+  .app__about {
+    margin: 2rem 0;
+  }
+  .about-mainheader {
+    font-size: 1.5rem;
+  }
+  .about-images {
+    height: 30vh;
+  }
+  .about-sec_header {
+    font-size: 1.5rem;
+  }
+  .grey-bg {
+    font-size: 1.5rem;
+  }
+} */
+
+/* for tablets to Laptop screens */
+/* @media screen and (max-width: 1024px) and (min-width: 769px) {
+  .app__about {
+    margin: 3rem 0;
+  }
+  .about-mainheader {
+    font-size: 1.5rem;
+  }
+  .about-sec_header {
+    font-size: 1.5rem;
+  }
+  .grey-bg {
+    font-size: 1.5rem;
+  }
+} */
+
+/* for laptop to desktop or bigger screens */
+/* @media screen and (max-width: 1280px) and (min-width: 1025px) {
+  .app__about {
+    margin: 3rem 0;
+  }
+} */

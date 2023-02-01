@@ -1,0 +1,7 @@
+.app__image1 {
+  height: 80vh;
+  background-image: url("../../assets/bgimage2.webp");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100vw 100vh;
+}

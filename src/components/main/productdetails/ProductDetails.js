@@ -1,13 +1,15 @@
 import React, { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
-import { AiFillHome } from "react-icons/ai";
-import { NavLink } from "react-router-dom";
-import FadeLoader from "react-spinners/FadeLoader"; 
-import "./ProductDetails.scss";
+import FadeLoader from "react-spinners/FadeLoader";
 import axios from "axios"
+import { IoInformationCircleSharp } from "react-icons/io5"
+import { useParams } from "react-router-dom";
+
+import "./ProductDetails.css";
+import Loader from "../../../ui/loader/Loader";
 
 const ProductDetails = () => {
-  const { id } = useParams();
+
+  const { id } = useParams()
 
   const [ProductDetail, setProductDetail] = useState([]);
   const [loading, setLoading] = useState(false);
@@ -32,36 +34,27 @@ const ProductDetails = () => {
     <>
       <div className="productdetails">
         {loading ? (
-          <FadeLoader style={{ position: "fixed", top: "50%", left: "50%", transform: "translate(-50%, -50%)" }} color={"black"} loading={loading} size={150} />
+          <Loader />
         ) : (
           <>
-            <img src={ProductDetail.image} alt="image" />
+            <img className="productinfo-image" src={ProductDetail.image} alt="details" />
             <div className="productinfo">
-              <div className="title">{ProductDetail.title}</div>
-              <div className="desc">
-                <div className="icon">
-                  <i
-                    className="fa fa-info-circle"
-                    style={{ "font-size": "24px" }}
-                  ></i>
-                </div>
+              <div className="productinfo-header">
+                {ProductDetail.title}
+              </div>
+              <div className="productinfo-desc">
+                <IoInformationCircleSharp className="info-icon" />
                 {ProductDetail.description}
               </div>
-              <div className="price">$ {ProductDetail.price}</div>
-              <div className="rating">
+              <div className="productinfo-rating">
                 ⭐{ProductDetail.rating && ProductDetail.rating.rate}
               </div>
-              <div className="category">
+              <div className="productinfo-category">
                 category-&nbsp;&nbsp;&nbsp;{ProductDetail.category}
               </div>
             </div>
           </>
         )}
-      </div>
-      <div className="footer">
-        <NavLink to="/" className="btn">
-          <AiFillHome />
-        </NavLink>
       </div>
     </>
   );

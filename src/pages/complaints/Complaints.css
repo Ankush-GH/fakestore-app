@@ -1,0 +1,68 @@
+.app__complaints {
+  margin: 3rem 0;
+  flex-direction: column;
+}
+
+/* for small to medium mobiles */
+@media screen and (max-width: 361px) and (min-width: 320px) {
+  .app__complaints {
+    margin: 0rem 0 2rem 0;
+  }.font_head {
+    font-size: small;
+  }
+}
+
+@media screen and (max-width: 400px) and (min-width: 362px) {
+  .app__complaints {
+    margin: 0rem 0 2rem 0;
+  }.font_head {
+    font-size: medium;
+  }
+}
+
+@media screen and (max-width: 440px) and (min-width: 401px) {
+  .app__complaints {
+    margin: 0rem 0 2rem 0;
+  }.font_head {
+    font-size: medium;
+  }
+}
+
+/* for medium to tablets */
+@media screen and (max-width: 730px) and (min-width: 641px) {
+  .app__complaints {
+    margin: -1.5rem 0 2rem 0;
+  }
+  .font_head {
+    font-size: larger;
+  }
+}
+
+@media screen and (max-width: 821px) and (min-width: 731px) {
+  .app__complaints {
+    margin: -1rem 0 2rem 0;
+  }
+  .font_head {
+    font-size: larger;
+  }
+}
+
+/* for tablets to Laptop screens */
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+  .app__complaints {
+    margin: -2rem 0 2rem 0;
+  }
+  .font_head {
+    font-size: x-large;
+  }
+}
+
+/* for laptop to desktop or bigger screens */
+@media screen and (max-width: 1280px) and (min-width: 1025px) {
+  .app__complaints {
+    margin: -2rem 0 2rem 0;
+  }
+  .font_head {
+    font-size: x-large;
+  }
+}

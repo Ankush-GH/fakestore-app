@@ -1,0 +1,47 @@
+.app__jewelery {
+  flex-direction: column;
+}
+
+.main-mainheader {
+  margin-top: 1%;
+  color: var(--color-black);
+  font-family: var(--font-head);
+}
+
+.products {
+  width: 100vw;
+}
+
+@media screen and (max-width: 400px) and (min-width: 362px) {
+  .app__jewelery {
+    margin-top: 2rem;
+  }
+  .main-mainheader {
+    margin-bottom: -1rem;
+    font-size: large;
+  }
+}
+
+@media screen and (max-width: 440px) and (min-width: 401px) {
+  .main-mainheader {
+    margin-bottom: -1rem;
+    font-size: large;
+  }
+  .app__jewelery {
+    margin-top: 2rem;
+  }
+}
+
+@media screen and (max-width: 730px) and (min-width: 641px) {
+  .main-mainheader {
+    margin-bottom: -1rem;
+    font-size: xx-large;
+  }
+}
+
+@media screen and (max-width: 821px) and (min-width: 731px) {
+  .main-mainheader {
+    margin-bottom: -1rem;
+    font-size: xx-large;
+  }
+}

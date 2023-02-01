@@ -1,0 +1,43 @@
+.app__electronics {
+  flex-direction: column;
+}
+
+.main-mainheader {
+  margin-top: 1%;
+  color: var(--color-black);
+  font-family: var(--font-head);
+}
+
+.products {
+  width: 100vw;
+}
+
+@media screen and (max-width: 400px) and (min-width: 362px) {
+  .app__electronics {
+    margin-top: 2rem;
+  }
+  .main-mainheader {
+    margin-bottom: -1.5rem;
+    font-size: large;
+  }
+}
+
+@media screen and (max-width: 440px) and (min-width: 401px) {
+  .app__electronics {
+    margin-top: 2rem;
+  }
+  .main-mainheader {
+    margin-bottom: -1.5rem;
+    font-size: large;
+  }
+}
+
+@media screen and (max-width: 821px) and (min-width: 731px) {
+  .app__electronics {
+    margin-top: 2rem;
+  }
+  .main-mainheader {
+    margin-bottom: -1rem;
+    font-size: x-large;
+  }
+}

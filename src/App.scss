@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+.flex__center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.section_margin-top {
+  margin-top: 3.75rem;
+}
+
+.link {
+  color: var(--color-words);
+}
+.link :hover {
+  color: var(--color-words);
+}
+
+.products {
+  flex-wrap: wrap;
+}
+
+.font_base {
+  font-family: var(--font-base);
+}
+
+.font_head {
+  font-family: var(--font-head);
+}

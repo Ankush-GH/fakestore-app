@@ -1,0 +1,87 @@
+.app__mens {
+  flex-direction: column;
+}
+
+.main-mainheader {
+  margin-top: 1%;
+  color: var(--color-black);
+  font-family: var(--font-head);
+}
+
+.products {
+  width: 100vw;
+}
+
+/* for small to medium mobiles */
+@media screen and (max-width: 361px) and (min-width: 320px) {
+  .app__mens {
+    margin-top: 2rem;
+  }
+  .main-mainheader {
+    margin-bottom: -2rem;
+    font-size: medium;
+  }
+}
+
+@media screen and (max-width: 400px) and (min-width: 362px) {
+  .app__mens {
+    margin-top: 2rem;
+  }
+  .main-mainheader {
+    margin-bottom: -2rem;
+    font-size: medium;
+  }
+}
+
+@media screen and (max-width: 440px) and (min-width: 401px) {
+  .app__mens {
+    margin-top: 2rem;
+  }
+  .main-mainheader {
+    margin-bottom: -2rem;
+    font-size: medium;
+  }
+}
+
+/* for medium to tablets */
+@media screen and (max-width: 730px) and (min-width: 641px) {
+  .app__mens {
+    margin-top: 2rem;
+  }
+  .main-mainheader {
+    margin-bottom: -2rem;
+    font-size: xx-large;
+  }
+}
+
+@media screen and (max-width: 821px) and (min-width: 731px) {
+  .app__mens {
+    margin-top: 2rem;
+  }
+  .main-mainheader {
+    margin-bottom: -1rem;
+    font-size: xx-large;
+  }
+}
+
+/* for tablets to Laptop screens */
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+  .app__mens {
+    margin-top: -1rem;
+  }
+  .main-mainheader {
+    margin-bottom: -1rem;
+    font-size: xx-large;
+  }
+}
+
+/* for laptop to desktop or bigger screens */
+@media screen and (max-width: 1280px) and (min-width: 1025px) {
+  .app__mens {
+    margin-top: 1rem;
+  }
+  .main-mainheader {
+    margin-bottom: -1rem;
+    font-size: xx-large;
+  }
+}

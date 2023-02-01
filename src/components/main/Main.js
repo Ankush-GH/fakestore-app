@@ -43,13 +43,6 @@ const Main = () => {
             })}
           </div>
 
-          <div className="footer">
-            <h3>&copy; FakeStore</h3>
-            <span>All Rights Reserved</span>
-            <span>
-              For complaints regarding products call us on : +1 5254 6464
-            </span>
-          </div>
         </div>
       )}
     </>

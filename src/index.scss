@@ -1,7 +1,13 @@
-body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Oswald', sans-serif;
-  overflow-x: hidden;
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani&family=Unbounded&display=swap");
+
+:root {
+  --font-head: "Unbounded", cursive;
+  --font-base: "Rajdhani", sans-serif;
+  --color-black: #212121;
+  --color-grey: #3e5445;
+  --color-words: #b1c7b8;
+}
+
+a {
+  text-decoration: none;
 }
