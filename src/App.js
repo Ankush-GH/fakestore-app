@@ -19,6 +19,9 @@ import Complaints from "./pages/complaints/Complaints";
 import TypeWriter from "./components/typewriter/TypeWriter";
 import Video from "./components/video/Video";
 
+
+// JUST CHECKING 
+
 function App() {
 
   return (
@@ -62,7 +65,7 @@ function App() {
           {<Complaints />}
         </Route>
       </Switch>
-      
+
       <Video />
       <Footer />
     </>
